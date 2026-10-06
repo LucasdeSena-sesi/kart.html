@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121214;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(250, 204, 21, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.05) 0%, transparent 40%);
+    color: #e1e1e6;
+    padding: 20px;
+}
+
+form, .card-home {
+    background: #1a1a1e;
+    width: 100%;
+    max-width: 340px;
+    padding: 28px 24px;
+    border: 1px solid #29292e;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+form::before, .card-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        #facc15 0px,
+        #facc15 12px,
+        #121214 12px,
+        #121214 24px
+    );
+}
+
+h2 {
+    font-size: 1.15rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #a8a8b3;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px 12px;
+    font-size: 0.9rem;
+    background: #121214;
+    border: 1px solid #323238;
+    border-radius: 2px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+input:focus, select:focus {
+    border-color: #facc15;
+}
+
+input::placeholder {
+    color: #505059;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #facc15;
+    color: #121214;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.05s ease;
+}
+
+button:hover {
+    background: #eab308;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#btnSair {
+    background: transparent;
+    border: 1px solid #323238;
+    color: #8d8d99;
+    margin-top: 14px;
+}
+
+#btnSair:hover {
+    border-color: #7c7c8a;
+    color: #e1e1e6;
+    background: transparent;
+}
+
+#mensagemBoasVindas {
+    text-align: center;
+    color: #a8a8b3;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+#statusAgendamento {
+    font-size: 0.8rem;
+    color: #4ade80;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+.card-home form {
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    max-width: 100%;
+}
+
+.card-home form::before {
+    display: none;
+}

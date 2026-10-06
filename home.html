@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Painel do Piloto - Kartodromo Speed</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="card-home">
+            <h2>Kartodromo Speed</h2>
+            <p id="mensagemBoasVindas">Bem-vindo, Piloto!</p>
+
+            <form id="formAgendamento">
+                <label for="dataCorrida">Escolha a data:</label>
+                <input type="date" id="dataCorrida" required>
+
+                <label for="pistaCorrida">Escolha a pista:</label>
+                <select id="pistaCorrida" required>
+                    <option value="">Selecione uma pista</option>
+                    <option value="Pista Asfalto (Indoor)">Pista Asfalto (Indoor)</option>
+                    <option value="Circuito Rapido (Outdoor)">Circuito Rapido (Outdoor)</option>
+                    <option value="Pista Noturna Pro">Pista Noturna Pro</option>
+                </select>
+
+                <button type="submit">Confirmar Agendamento</button>
+            </form>
+
+            <p id="statusAgendamento"></p>
+
+            <button id="btnSair">Sair dos Boxes</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>  
+</html>
